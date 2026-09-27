@@ -32,23 +32,19 @@
       border-radius: 6px;
     }
   </style>
-  <script 
-  src="https://www.paypal.com/sdk/js?client-id=BAAfu7itEAYmam-kDZYVZ2Y55pXxli9-1E2lbxPh3Nny5Rjfjo24z4fP9UYNCTpWQWJ7hTUquQkuRG0dSI&components=hosted-buttons&enable-funding=venmo&currency=USD">
-</script>
 </head>
 
 <body>
 
   <div class="container">
-    <h1>Change the Tab Name</h1>
+    <h1>Screenshot Some Embarrassment</h1>
 
     <input
       type="text"
       id="pageName"
-      placeholder="Enter a page name..."
+      placeholder="What did they catch you searching?..."
     >
   </div>
-//Paypal Link
   <script>
     const input = document.getElementById("pageName");
 
@@ -56,7 +52,11 @@
       document.title = input.value || "My Website";
     });
   </script>
-
+<p></p>
+<p></p>
+<script 
+  src="https://www.paypal.com/sdk/js?client-id=BAAfu7itEAYmam-kDZYVZ2Y55pXxli9-1E2lbxPh3Nny5Rjfjo24z4fP9UYNCTpWQWJ7hTUquQkuRG0dSI&components=hosted-buttons&enable-funding=venmo&currency=USD">
+</script>
 <div id="paypal-container-97FSGEMYWH7M4"></div>
 <script>
   paypal.HostedButtons({
