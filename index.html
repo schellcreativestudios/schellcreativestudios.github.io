@@ -32,6 +32,9 @@
       border-radius: 6px;
     }
   </style>
+  <script 
+  src="https://www.paypal.com/sdk/js?client-id=BAAfu7itEAYmam-kDZYVZ2Y55pXxli9-1E2lbxPh3Nny5Rjfjo24z4fP9UYNCTpWQWJ7hTUquQkuRG0dSI&components=hosted-buttons&enable-funding=venmo&currency=USD">
+</script>
 </head>
 
 <body>
@@ -45,7 +48,7 @@
       placeholder="Enter a page name..."
     >
   </div>
-
+//Paypal Link
   <script>
     const input = document.getElementById("pageName");
 
@@ -54,5 +57,12 @@
     });
   </script>
 
+<div id="paypal-container-97FSGEMYWH7M4"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "97FSGEMYWH7M4",
+  }).render("#paypal-container-97FSGEMYWH7M4")
+</script>
+  
 </body>
 </html>
